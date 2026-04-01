@@ -87,8 +87,12 @@
     .proj-result-text { font-size: 0.85rem; color: var(--green); font-weight: 500; }
     .proj-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
     .tag { background: var(--warm); border: 1px solid rgba(61,43,31,0.1); padding: 4px 12px; border-radius: 100px; font-size: 0.75rem; color: var(--brown2); font-weight: 500; }
+    .tag.voice { background: rgba(232,98,42,0.08); border-color: rgba(232,98,42,0.25); color: var(--orange); }
     .proj-link { display: inline-flex; align-items: center; gap: 6px; font-size: 0.875rem; font-weight: 700; color: var(--orange); text-decoration: none; transition: gap .2s; }
     .proj-link:hover { gap: 10px; }
+    .proj-link-secondary { display: inline-flex; align-items: center; gap: 6px; font-size: 0.875rem; font-weight: 600; color: var(--brown2); text-decoration: none; transition: color .2s; }
+    .proj-link-secondary:hover { color: var(--brown); }
+    .proj-links-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-top: 4px; }
 
     /* O MNIE */
     #o-mnie { background: var(--warm); padding: 100px 6%; border-top: 1px solid rgba(61,43,31,0.08); }
@@ -238,19 +242,24 @@
           <p class="proj-desc">
             Sala weselna w Łodzi. Chatbot zbiera zapytania 24/7 — imię, termin, 
             liczba gości, email. Make automatycznie tworzy event w Google Calendar 
-            i zapisuje do arkusza. Właściciel rano widzi wszystkie nowe zapytania.
+            i zapisuje do arkusza. Na stronie działa też głosowy asystent AI — 
+            można porozmawiać z botem i zarezerwować termin głosem.
           </p>
           <div class="proj-result">
             <div class="proj-result-label">✓ Co dostaje właściciel</div>
-            <div class="proj-result-text">Automatyczny wpis w kalendarzu + wiersz w arkuszu przy każdym zapytaniu</div>
+            <div class="proj-result-text">Automatyczny wpis w kalendarzu + wiersz w arkuszu przy każdym zapytaniu. Bot głosowy odbiera 24/7.</div>
           </div>
           <div class="proj-tags">
             <span class="tag">Chatbot rezerwacyjny</span>
+            <span class="tag voice">🎙️ Voice Bot AI</span>
             <span class="tag">Make.com</span>
             <span class="tag">Google Calendar</span>
             <span class="tag">Google Sheets</span>
           </div>
-          <a href="https://cookplanai.github.io/Syta-Karczma/" target="_blank" class="proj-link">Otwórz demo i przetestuj chatbota →</a>
+          <div class="proj-links-row">
+            <a href="https://cookplanai.github.io/Syta-Karczma/" target="_blank" class="proj-link">Otwórz demo →</a>
+            <a href="https://cookplanai.github.io/Syta-Karczma/" target="_blank" class="proj-link-secondary">🎙️ Kliknij złoty mikrofon i porozmawiaj z botem</a>
+          </div>
         </div>
       </div>
 
@@ -280,21 +289,27 @@
       <div class="proj-card">
         <div class="proj-photo-wrap">
           <img class="proj-photo" src="https://images.unsplash.com/photo-1586769852044-692d6e3703f0?w=700&q=80" alt="Bot Telefoniczny"/>
+          <div class="live-badge"><span class="live-dot"></span>Live</div>
         </div>
         <div class="proj-body">
           <div class="proj-num">03</div>
           <div class="proj-title">Bot Telefoniczny</div>
           <p class="proj-desc">
-            Głosowy asystent AI dla Burger House. Odbiera telefony, rezerwuje stoliki 
-            i odpowiada na pytania naturalnym głosem po polsku — Vapi + ElevenLabs.
+            Głosowy asystent AI — rezerwuje stoliki i odpowiada na pytania 
+            naturalnym głosem po polsku. Działa live na stronie Sytej Karczmy. 
+            Wejdź na demo i kliknij złoty przycisk mikrofonu w lewym dolnym rogu.
           </p>
+          <div class="proj-result">
+            <div class="proj-result-label">🎙️ Jak przetestować teraz</div>
+            <div class="proj-result-text">Syta Karczma → lewy dolny róg → złoty przycisk mikrofonu → zacznij rozmowę</div>
+          </div>
           <div class="proj-tags">
+            <span class="tag voice">🎙️ Voice AI</span>
             <span class="tag">Vapi</span>
             <span class="tag">ElevenLabs</span>
-            <span class="tag">Voice AI</span>
             <span class="tag">Polski głos</span>
           </div>
-          <a href="#kontakt" class="proj-link">Zapytaj o demo głosowe →</a>
+          <a href="https://cookplanai.github.io/Syta-Karczma/" target="_blank" class="proj-link">🎙️ Wypróbuj voice bota na żywo →</a>
         </div>
       </div>
 
